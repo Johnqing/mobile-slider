@@ -1,11 +1,13 @@
-移动版焦点图
-=============
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="charset=utf-8">
+	<title></title>
+	<meta name="viewport"  content="width=device-width,user-scalable=no">
+	<link rel="stylesheet" href="css.css"/>
+</head>
+<body>
 
-## 使用
-
-dom结构
-
-```html
 <div id="slideBox" class="slideBox">
 
 	<div class="bd">
@@ -33,31 +35,14 @@ dom结构
 		<ul></ul>
 	</div>
 </div>
-```
+  
+  <!-- jQuery -->
+  <script src="https://pay.360.cn/resource/js/lib/171.js?v=e3d54.js"></script>
 
-调用
+<script src="slider.js"></script>
 
-```javascript
-
-$('#slideBox').slider({
-	// 需要切换的dom结构
-	tabs: '.bd ul',
-	// 小圆点 切换的结构
-	btns: '.hd ul',
-	// 切换方式（目前只支持 左）
-	effect: 'left',
-	// 是否切换小圆点
-	autoPage: true,
-	// 是否自动播放
-	autoPlay: true,
-	//切换效果的速度
-	delayTime: 200,
-	//每一次切换的时间间隔
-	interTime: 2500,
-	// 小圆点的样式
-	currClass: 'on',
-	// 鼠标拖动单张slider，需要到什么位置切换
-	// 计算方式为 
-	distance: 2
-});
-```
+<script>
+$('#slideBox').slider();
+</script>
+</body>
+</html>
