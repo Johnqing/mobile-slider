@@ -229,5 +229,5 @@
 		});
 
 	}
-})(jQuery);
+})(jQuery||Zepto);
 
